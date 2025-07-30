@@ -1,5 +1,5 @@
 def fahr_a_celcius(f):
-    return float(f * 1.8 + 32)
+    return print("El resultado de su conversion es " + str(float(f - 32) * 5/9))
 
 def fahr_a_kelvin(f):
-    return float((f + 459.67) / 1.8)
+    return print("El resultado de su conversion es " + str(float(f - 32) * 5/9 + 273.15))

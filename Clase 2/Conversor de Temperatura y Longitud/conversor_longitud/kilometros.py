@@ -1,8 +1,8 @@
 def kilom_a_metros(k):
-    return float(k * 1000)
+    print("El resultado de su conversion es " + str(float(k * 1000)))
 
 def kilom_a_millas(k):
-    return float(k / 1.60934)
+    return print("El resultado de su conversion es " + str(float(k / 1.60934)))
 
 def kilom_a_pies(k):
-    return float(k * 3280.84)
+    return print("El resultado de su conversion es " + str(float(k * 3280.84)))
