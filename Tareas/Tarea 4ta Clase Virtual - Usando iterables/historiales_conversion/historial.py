@@ -9,7 +9,6 @@ idIncrement = 1
 NOMBRE_ARCHIVO = "historial_conversiones.csv"
 
 def inicializar_csv():
-    """Crea el archivo CSV si no existe, con encabezados."""
     if not os.path.exists(NOMBRE_ARCHIVO):
         with open(NOMBRE_ARCHIVO, mode="w", newline="", encoding="utf-8") as archivo:
             escritor = csv.writer(archivo)
@@ -29,7 +28,6 @@ def Listarhistorial():
 
 
 def obtener_ultimo_id():
-    """Devuelve el último ID usado en el CSV."""
     inicializar_csv()
     with open(NOMBRE_ARCHIVO, mode="r", encoding="utf-8") as archivo:
         lector = csv.DictReader(archivo)
